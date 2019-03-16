@@ -2,4 +2,4 @@ from django.apps import AppConfig
 
 
 class ContactusConfig(AppConfig):
-    name = 'ContactUs'
+    name = 'contactus'

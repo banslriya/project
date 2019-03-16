@@ -38,8 +38,8 @@ INSTALLED_APPS = [
     'crispy_forms',
     'django.contrib.messages',
     'django.contrib.staticfiles',
-    'ContactUs.apps.ContactusConfig',
     'sponsor.apps.SponsorConfig',
+    'contactus.apps.ContactusConfig',
 ]
 
 
