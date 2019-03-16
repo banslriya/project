@@ -538,7 +538,7 @@ body { font-family: 'Open Sans', sans-serif; }
 .service-alt { display: none; }
 .service-title { font-size: 16px; line-height: 22px; font-weight: 700; color: #222; letter-spacing: 1px; text-transform: uppercase; margin-bottom: 13px; }
 .service-text { font-size: 13px; line-height: 24px; font-weight: 400; color: #bbbbbb; }
-.service-entry:hover { background: #feca16; border-color: #feca16; -moz-box-shadow: 0px 4px 5px 0px rgba(0, 0, 0, 0.15); box-shadow: 0px 4px 5px 0px rgba(0, 0, 0, 0.15); }
+.service-entry:hover { background: #c00; border-color: red; -moz-box-shadow: 0px 4px 5px 0px rgba(0, 0, 0, 0.15); box-shadow: 0px 4px 5px 0px rgba(0, 0, 0, 0.15); }
 .service-entry:hover .service-icon { display: none; }
 .service-entry:hover .service-alt { display: inline; }
 .service-entry:hover .service-title { color: #fff; }
