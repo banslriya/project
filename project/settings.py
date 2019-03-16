@@ -39,7 +39,7 @@ INSTALLED_APPS = [
     'django.contrib.messages',
     'django.contrib.staticfiles',
     'ContactUs.apps.ContactusConfig',
-    'account.apps.AccountConfig',
+    'sponsor.apps.SponsorConfig',
 ]
 
 

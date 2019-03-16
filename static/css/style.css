@@ -231,7 +231,7 @@ body { font-family: 'Open Sans', sans-serif; }
 .no-padding { padding-left: 0; padding-right: 0; }
 .no-margin { margin-left: 0; margin-right: 0; }
 .wide-container { padding-left: 30px; padding-right: 30px; }
-.img-full { width: 100%; }
+.img-full { width: 100%; height: 370px;}
 /*-------------------------------------------------------------------------------------------------------------------------------*/
 /* 05 - HEADER */
 /*-------------------------------------------------------------------------------------------------------------------------------*/
@@ -242,7 +242,7 @@ body { font-family: 'Open Sans', sans-serif; }
 .main-nav li { display: inline-block; margin-left: 33.2px; }
 .main-nav a { position: relative; display: block; font-size: 13px; line-height: 15px; font-weight: 400; color: #fff; text-transform: uppercase; padding-bottom: 9px; }
 .main-nav li a:before { content: ''; display: block; position: absolute; bottom: 0px; left: 0px; right: 0px; height: 2px; background: transparent; }
-.main-nav li.active a:before, .main-nav li:hover a:before { background: #feca16; }
+.main-nav li.active a:before, .main-nav li:hover a:before { background: red; }
 .header .logo-block { float: left; }
 /*menu*/
 .cmn-toggle-switch { position: fixed; right: 15px; top: 20px; display: none; float: right; overflow: hidden; margin: 0; padding: 0; width: 20px; height: 35px; font-size: 0; text-indent: -9999px; -webkit-appearance: none; -moz-appearance: none; appearance: none; -moz-box-shadow: none; box-shadow: none; -moz-border-radius: none; border-radius: none; border: none; cursor: pointer; background-color: transparent; z-index: 101; }
@@ -363,7 +363,16 @@ body { font-family: 'Open Sans', sans-serif; }
 /*buttons*/
 .c-btn { display: inline-block; font-weight: 700; text-align: center; text-transform: uppercase; }
 .c-btn.b-50 { font-size: 12px; line-height: 48px; padding: 0px 32px; -moz-border-radius: 5px; border-radius: 5px; }
-.c-btn.yellow { background: #feca16; color: #fff; border: 1px solid #feca16; }
+.c-btn:hover {
+    color: #222 !important;
+    background: #c00 !important;
+}
+
+.c-btn.yellow {
+    background: #c00;
+    color: #fff;
+    border: 1px solid #c00;
+}
 .c-btn.yellow-2 { background: transparent; color: #282c38; border: 1px solid #feca16; }
 .c-btn.green { background: #4cae51; color: #fff; border: 1px solid #4cae51; }
 .c-btn.green-2 { background: transparent; color: #4cae51; border: 1px solid #4cae51; }
@@ -529,7 +538,7 @@ body { font-family: 'Open Sans', sans-serif; }
 .service-alt { display: none; }
 .service-title { font-size: 16px; line-height: 22px; font-weight: 700; color: #222; letter-spacing: 1px; text-transform: uppercase; margin-bottom: 13px; }
 .service-text { font-size: 13px; line-height: 24px; font-weight: 400; color: #bbbbbb; }
-.service-entry:hover { background: #feca16; border-color: #feca16; -moz-box-shadow: 0px 4px 5px 0px rgba(0, 0, 0, 0.15); box-shadow: 0px 4px 5px 0px rgba(0, 0, 0, 0.15); }
+.service-entry:hover { background: #c00; border-color: red; -moz-box-shadow: 0px 4px 5px 0px rgba(0, 0, 0, 0.15); box-shadow: 0px 4px 5px 0px rgba(0, 0, 0, 0.15); }
 .service-entry:hover .service-icon { display: none; }
 .service-entry:hover .service-alt { display: inline; }
 .service-entry:hover .service-title { color: #fff; }

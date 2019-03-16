@@ -148,7 +148,7 @@
           </div>
         </div>
     
-    <div id="mission">
+      <div id="mission">
           <div class="main-block style-2">
               <div class="container">
                   <div class="row">
@@ -166,8 +166,8 @@
                 <img class="img-responsive img-full" src="{% static '/img/screen_11.png' %}" alt="">
                 <div class="overlay">
                   <div class="overlay-inner">
-                    <div class="overlay-title">Header 3 &amp; Banner 1</div>
-                    <div class="overlay-text">Top transparent header with additional information: contact, social links and search popup button.</div>
+                    <div class="overlay-title">TECHNOLOGIES</div>
+                    <div class="overlay-text">All the latest Technologies are covered.</div>
                     </div>
                 </div>
               </div>
@@ -177,8 +177,8 @@
                 <img class="img-responsive img-full" src="{% static '/img/bg_11.JPG' %}" alt="">
                 <div class="overlay">
                   <div class="overlay-inner">
-                    <div class="overlay-title">Header 1 &amp; Banner 2</div>
-                    <div class="overlay-text">Top transparent header and main banner with search form</div>
+                    <div class="overlay-title">SALUTATION</div>
+                    <div class="overlay-text">Technical Salutation for technical God.</div>
                    </div>
                 </div>
               </div>
@@ -188,8 +188,8 @@
                 <img class="img-responsive img-full" src="{% static '/img/screen_22.jpg' %}" alt="">
                 <div class="overlay">
                   <div class="overlay-inner">
-                    <div class="overlay-title">Header 1 &amp; Banner 3</div>
-                    <div class="overlay-text">Top transparent header and main text banner.</div>
+                    <div class="overlay-title">INTERACTION</div>
+                    <div class="overlay-text">Students interaction with redhat authority.</div>
                      </div>
                 </div>
               </div>
@@ -199,8 +199,8 @@
                 <img class="img-responsive img-full" src="{% static '/img/abc.JPG' %}" alt="">
                 <div class="overlay">
                   <div class="overlay-inner">
-                    <div class="overlay-title">Header 1 &amp; Banner 4</div>
-                    <div class="overlay-text">Top transparent header and main banner with video background.</div>
+                    <div class="overlay-title">PROJECT PRESENTATION</div>
+                    <div class="overlay-text">Presentation of Project</div>
                     </div>
                 </div>
               </div>
@@ -209,6 +209,7 @@
               </div>
           </div>      
     </div>
+    
     
         <div id="our_partners">
           <div class="main-block style-2 bg-grey">
@@ -287,7 +288,7 @@
                       <img class="customres-logo" src="{% static '/img/landing/ava_1.jpg' %}" alt="">
                       <div class="cutomers-title">Sponsors</div>
                       <div class="cuctomres-text">The design and the documentation quality is very good. Also the features and the customization options are a lot. But the Customer Support (without which it would be impossible to me to take full advantage of this theme) is the best! Thanks a lot! nmg</div><br>
-                      <a class="c-btn b-50 yellow hv-yellow-t" href="{% url '' %}">As A Sponsor</a>
+                      <a class="c-btn b-50 yellow hv-yellow-t" href="{% url 'sponsor:sponsor' %}">As A Sponsor</a>
                     </div>
                   </div>
                   <div class="costomers-block col-xs-12 col-sm-6 col-md-6">
@@ -348,6 +349,15 @@
                       <div class="col-xs-12 col-sm-10 col-sm-offset-1 col-md-8 col-md-offset-2">
                           <div class="block-header">
                               <h2 class="block-title">CONTACT-US</h2>
+                     <h1>Contact Us</h1>
+                    <form method="post">
+                        {% csrf_token %}
+                        {{ form.as_p }}
+                        <div class="form-actions">
+
+                          <button type="submit">Send</button>
+                        </div>
+                    </form>            
                            </div>
                       </div>
                   </div>
