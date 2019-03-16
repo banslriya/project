@@ -1,8 +1,37 @@
+{% extends "base.html" %}
+{% load crispy_forms_tags %}
+{% load staticfiles %}
 
-                    <form method="post">
+{% block content %}
+
+<div id="content-wrapper">
+    <div class="main-slider clearfix">
+        <div class="main-block style-2" style="height:600px;">
+            <img class="center-image" src="{% static '/img/bg_11.JPG' %}" alt="" >
+                <div class="vertical-align">
+                  <div class="container">
+                    <div class="banner-block style-4">
+		                <h4 class="banner-date animate delay-1">Jazbaa Hackathon1.0 </h4>
+		                <h2 class="banner-title animate delay-2">Register-Now</h2>
+		            </div>
+                  </div>
+                </div> 
+        </div>
+    </div>
+</div>
+<div class="row">
+ <div style="border:2px solid #e0d6d6;margin:100px;padding:20px;font-size:20px;border-radius:10px;font-family:sans-serif;">
+
+  					<form method="post">
                         {% csrf_token %}
-                        {{ form.as_p }}
+                        {{ form|crispy }}
                         <div class="form-actions">
                           <button type="submit">Send</button>
                         </div>
                     </form>            
+
+</div>                 
+</div>
+
+</div>
+{% endblock %}

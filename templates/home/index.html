@@ -4,9 +4,7 @@
  {% block content %}
 
  <div id="content-wrapper">
-                  
-        <div id="home" >
-      
+    <div id="home"> 
       <div class="main-slider clearfix">
             <div class="fullheight">
                 <img class="center-image" src="{% static '/img/main_11.jpeg' %}" alt="">
@@ -24,7 +22,10 @@
 
           <div class="main-block clearfix">
               <div class="container">
+               
+      
                   <div class="row">
+
                       <div class="col-xs-12 col-sm-10 col-sm-offset-1 col-md-8 col-md-offset-2">
                           <div class="block-header">
                              <h2 class="block-title">HOME</h2>
@@ -340,30 +341,10 @@
                   </div>
                                                                  
                 </div>
+                 <a class="c-btn b-50 yellow hv-yellow-t" href="{% url 'contactus:email' %}">contact-us</a>
               </div>
             </div>
           </div>      
     </div>
-
-    <div id="contact_us">
-          <div class="main-block style-2">
-              <div class="container">
-                  <div class="row">
-                      <div class="col-xs-12 col-sm-10 col-sm-offset-1 col-md-8 col-md-offset-2">
-                          <div class="block-header">
-                              <h2 class="block-title">CONTACT-US</h2>
-                               <a class="c-btn b-50 yellow hv-yellow-t" href="{% url 'contactus:email' %}">click me</a>
-                    
-                           </div>
-                      </div>
-                  </div>
-                             
-          </div>                
-              </div>
-          </div>      
-    </div>
-
-
-
 
     {% endblock %}

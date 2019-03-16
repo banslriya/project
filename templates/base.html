@@ -13,7 +13,6 @@
     <link href="{% static '/css/idangerous.swiper.css' %}" rel="stylesheet" type="text/css" />
     <link href="{% static '/css/style.css' %}" rel="stylesheet" type="text/css" />
     <link href="{% static '/css/landing.css' %}" rel="stylesheet" type="text/css" />
-    <link rel="shortcut icon" href="{% static '/img/favicon.ico' %}" />
     <title>JAZBAA Hackathon1.0</title>
 </head>
 <body data-color="yellow">
@@ -31,7 +30,7 @@
                     <li><a class="anchor-scroll" href="#our_partners">Our-Partners</a></li>
                     <li><a class="anchor-scroll" href="#register">Register For Event</a></li>
                     <li><a class="anchor-scroll" href="#FAQs">FAQs</a></li>
-                    <li><a class="anchor-scroll" href="#contact_us">Contact-Us</a></li>
+                    <li><a class="anchor-scroll" href="{% url 'contactus:email' %}">Contact-Us</a></li>
                     
                 </ul>       
       </nav>

@@ -43,6 +43,9 @@ INSTALLED_APPS = [
 ]
 
 
+CRISPY_TEMPLATE_PACK = 'bootstrap4'
+
+
 EMAIL_BACKEND = 'django.core.mail.backends.console.EmailBackend'
 
 MIDDLEWARE = [
@@ -81,8 +84,15 @@ WSGI_APPLICATION = 'project.wsgi.application'
 
 DATABASES = {
     'default': {
-        'ENGINE': 'django.db.backends.sqlite3',
-        'NAME': os.path.join(BASE_DIR, 'db.sqlite3'),
+        #'ENGINE': 'django.db.backends.sqlite3',
+        #'NAME': os.path.join(BASE_DIR, 'db.sqlite3'),
+        'ENGINE': 'django.db.backends.postgresql_psycopg2',
+        'NAME': 'jazbaa',
+        'USER': 'students',
+        'PASSWORD': 'jazbaa1.0',
+        'HOST': 'localhost',
+        'PORT': '',
+
     }
 }
 
@@ -127,4 +137,10 @@ STATIC_URL = '/static/'
 STATIC_DIR = os.path.join (BASE_DIR, 'static/')
 STATICFILES_DIRS = [STATIC_DIR,]
 
-CRISPY_TEMPLATE_PACK = 'bootstrap4'
+EMAIL_BACKEND = 'django.core.mail.backends.smtp.EmailBackend'
+EMAIL_HOST = 'smtp.gmail.com'
+EMAIL_PORT = 587
+EMAIL_USE_TLS = True
+EMAIL_HOST_USER = 'riyabansal261198@gmail.com'
+EMAIL_HOST_PASSWORD = 'riya@261198bansal'
+
