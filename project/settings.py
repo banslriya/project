@@ -35,9 +35,11 @@ INSTALLED_APPS = [
     'django.contrib.auth',
     'django.contrib.contenttypes',
     'django.contrib.sessions',
+    'crispy_forms',
     'django.contrib.messages',
     'django.contrib.staticfiles',
     'ContactUs.apps.ContactusConfig',
+    'account.apps.AccountConfig',
 ]
 
 
@@ -124,3 +126,5 @@ USE_TZ = True
 STATIC_URL = '/static/'
 STATIC_DIR = os.path.join (BASE_DIR, 'static/')
 STATICFILES_DIRS = [STATIC_DIR,]
+
+CRISPY_TEMPLATE_PACK = 'bootstrap4'
