@@ -4,6 +4,26 @@
 
 {% block content %}
 
+ <!-- HEADER -->
+    <header class="header type-1">
+      <div class="container">
+        
+      <nav class="main-nav">
+                <ul class="anchor-navigation">
+                    <li class="active"><a href="{% url 'home' %}">Home</a></li>
+                    <li><a href="{% url 'home' %}">About-Us</a></li>
+                    <li><a href="{% url 'home' %}">Our-Mission</a></li>
+                    <li><a href="{% url 'home' %}">Our-Partners</a></li>
+                    <li><a href="{% url 'home' %}">Register For Event</a></li>
+                    <li><a href="{% url 'home' %}">FAQs</a></li>
+                    <li><a href="{% url 'contactus:email' %}">Contact-Us</a></li>
+                    
+                </ul>       
+      </nav>
+            <button class="cmn-toggle-switch"><span></span></button>
+      </div>
+    </header>
+
 <div id="content-wrapper">
     <div class="main-slider clearfix">
         <div class="main-block style-2" style="height:600px;">

@@ -3,6 +3,26 @@
 
  {% block content %}
 
+  <!-- HEADER -->
+    <header class="header type-1">
+      <div class="container">
+        
+      <nav class="main-nav">
+                <ul class="anchor-navigation">
+                    <li class="active"><a class="anchor-scroll" href="#home">Home</a></li>
+                    <li><a class="anchor-scroll" href="#about_us">About-Us</a></li>
+                    <li><a class="anchor-scroll" href="#mission">Our-Mission</a></li>
+                    <li><a class="anchor-scroll" href="#our_partners">Our-Partners</a></li>
+                    <li><a class="anchor-scroll" href="#register">Register For Event</a></li>
+                    <li><a class="anchor-scroll" href="#FAQs">FAQs</a></li>
+                    <li><a class="anchor-scroll" href="{% url 'contactus:email' %}">Contact-Us</a></li>
+                    
+                </ul>       
+      </nav>
+            <button class="cmn-toggle-switch"><span></span></button>
+      </div>
+    </header>
+
  <div id="content-wrapper">
     <div id="home"> 
       <div class="main-slider clearfix">
@@ -229,7 +249,7 @@
                 <img class="img-responsive img-full" src="{% static '/img/lw.jpeg' %}" alt="">
                 <div class="overlay">
                   <div class="overlay-inner">
-                    <div class="overlay-title">Header 3 &amp; Banner 1</div>
+                    <div class="overlay-title">Linux World</div>
                     <div class="overlay-text">Top transparent header with additional information: contact, social links and search popup button.</div>
                      </div>
                 </div>
@@ -240,7 +260,7 @@
                 <img class="img-responsive img-full" src="{% static '/img/mhrd.jpeg' %}" alt="">
                 <div class="overlay">
                   <div class="overlay-inner">
-                    <div class="overlay-title">Header 1 &amp; Banner 2</div>
+                    <div class="overlay-title">MHRD</div>
                     <div class="overlay-text">Top transparent header and main banner with search form</div>
                    </div>
                 </div>
@@ -251,7 +271,7 @@
                 <img class="img-responsive img-full" src="{% static '/img/redhat1.png' %}" alt="">
                 <div class="overlay">
                   <div class="overlay-inner">
-                    <div class="overlay-title">Header 1 &amp; Banner 3</div>
+                    <div class="overlay-title">Redhat</div>
                     <div class="overlay-text">Top transparent header and main text banner.</div>
                     </div>
                 </div>
@@ -262,7 +282,7 @@
                 <img class="img-responsive img-full" src="{% static '/img/samsung.png' %}" alt="">
                 <div class="overlay">
                   <div class="overlay-inner">
-                    <div class="overlay-title">Header 1 &amp; Banner 4</div>
+                    <div class="overlay-title">Samsung</div>
                     <div class="overlay-text">Top transparent header and main banner with video background.</div>
                        </div>
                 </div>

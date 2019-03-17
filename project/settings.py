@@ -84,14 +84,14 @@ WSGI_APPLICATION = 'project.wsgi.application'
 
 DATABASES = {
     'default': {
-        'ENGINE': 'django.db.backends.sqlite3',
-        'NAME': os.path.join(BASE_DIR, 'db.sqlite3'),
-        #'ENGINE': 'django.db.backends.postgresql_psycopg2',
-        #'NAME': 'jazbaa',
-        #'USER': 'students',
-        #'PASSWORD': 'jazbaa1.0',
-        #'HOST': 'localhost',
-        #'PORT': '',
+        #'ENGINE': 'django.db.backends.sqlite3',
+        #'NAME': os.path.join(BASE_DIR, 'db.sqlite3'),
+        'ENGINE': 'django.db.backends.postgresql_psycopg2',
+        'NAME': 'jazbaa',
+        'USER': 'students',
+        'PASSWORD': 'jazbaa1.0',
+        'HOST': 'localhost',
+        'PORT': '',
 
     }
 }
@@ -142,5 +142,5 @@ EMAIL_HOST = 'smtp.gmail.com'
 EMAIL_PORT = 587
 EMAIL_USE_TLS = True
 EMAIL_HOST_USER = 'riyabansal261198@gmail.com'
-EMAIL_HOST_PASSWORD = 'riya@261198bansal'
+EMAIL_HOST_PASSWORD = '**********'
 
