@@ -12,8 +12,8 @@
 .mouse-wrapper { position: absolute; bottom: 25px; left: 50%; -webkit-transform: translateX(-50%); -moz-transform: translateX(-50%); -ms-transform: translateX(-50%); -o-transform: translateX(-50%); transform: translateX(-50%); }
 .mouse { position: relative; width: 25px; height: 40px; border: 3px solid #fff; -moz-border-radius: 12px; border-radius: 12px; }
 .mouse-wrapper .mouse:before { content: ''; display: block; position: absolute; top: 5px; left: 50%; width: 3px; height: 7px; background: #fff; -webkit-transform: translateX(-50%); -moz-transform: translateX(-50%); -ms-transform: translateX(-50%); -o-transform: translateX(-50%); transform: translateX(-50%); }
-.screens-block { position: relative; height: 895px; }
-.screen { position: absolute; top: 0px; bottom: 0px; width: 31.75%; -moz-box-shadow: 0 66px 2px 4px rgba(0, 0, 0, 0.1); box-shadow: 0 66px 2px 4px rgba(0, 0, 0, 0.1); background-position: top; }
+.screens-block { position: relative; height: 300px; }
+.screen { position: absolute; top: 0px; bottom: 0px; width: 31.75%; -moz-box-shadow: 0 66px 2px 4px rgba(0, 0, 0, 0.1); /*box-shadow: 0 66px 2px 4px rgba(0, 0, 0, 0.1);*/ background-position: top; }
 .screen:nth-child(1) { left: 0px; top: 50px; }
 .screen:nth-child(2) { left: 35%; -webkit-transform: translateX(-65%); -moz-transform: translateX(-65%); -ms-transform: translateX(-65%); -o-transform: translateX(-65%); transform: translateX(-65%); top: 25px; z-index: 1; }
 .screen:nth-child(3) { left: 50%; -webkit-transform: translateX(-50%); -moz-transform: translateX(-50%); -ms-transform: translateX(-50%); -o-transform: translateX(-50%); transform: translateX(-50%); z-index: 2; }
