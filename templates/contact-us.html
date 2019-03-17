@@ -3,7 +3,46 @@
 {% load staticfiles %}
 
 {% block content %}
+  <style type="text/css">
+    .form-actions input {border: 1px solid #ccc;border-radius: 0;background-color: #fff;border-left: 3px solid #d2d3d5;box-shadow: inset 0 1px 1px rgba(0,0,0,.075);}
+    textarea#id_message {
+        height: 100px !important;
+    }
+    label.col-form-label.requiredField {
+        font-weight: 600;
+        color: #646464;
+        font-size: 18px;
+        margin: 8px 0px;
+    }
 
+    span.asteriskField {
+        color: #c00;
+        content: "*";
+        font-weight: 800;
+        font-size: 1em;
+    }
+    #id_description {
+        border-radius: 0;
+        height: 125px !important;
+    }
+    #SubmitForm:hover {
+        background-color: #bb0a0a;
+    }
+
+    #SubmitForm {
+        cursor: pointer;
+        background-color: #c00;
+        color: #fff;
+        display: inline-block;
+        border: none;
+        font-size: 18px;
+        padding: 12px 40px;
+        font-weight: bold;
+        text-decoration: none;
+        text-transform: uppercase;
+        transition: background 0.2s ease-in 0s;
+    }
+  </style>
  <!-- HEADER -->
     <header class="header type-1">
       <div class="container">
@@ -39,25 +78,23 @@
         </div>
     </div>
 </div>
-<div class="row">
-<div class="col-md-7" style="border:2px solid #e0d6d6;margin:100px;padding:20px;font-size:20px;border-radius:10px;width:60%;font-family:sans-serif;">
+<div class="row" style="margin: 0; background: #f0f0f0;">
+<div class="col-md-7" style="margin:100px;padding:20px;font-size:20px;border-radius:10px;width:60%;font-family:sans-serif;">
 
     <form method="post">
         {% csrf_token %}
             {{ form|crispy }}
                 <div class="form-actions">
-                    <button type="submit">Send</button>
+                    <button type="submit" id="SubmitForm">Send</button>
                 </div>
     </form>    
 </div>      
 <div class="col-md-5" style="width:20%;font-size:20px;font-family:sans-serif;"><br><br><br><br><br><br>   
 
 			<p><a href="www.lwindia.com">www.lwindia.com</a></p><br>
-
-			<p><span>Mobile Number : </span> +91 9829105960 / 9351009002</p><br>
-
-            <p><span>Contact Number :</span>0141-2501609</p><br>
-
+            <p>Contact:</p>
+			<p><span>Mobile: </span> +91 9829105960 / 9351009002</p>
+            <p><span>Phone: </span>0141-2501609</p><br>
 		    <h2> @JAZBAA_hackathon1.0 </h2><br>
 
        
