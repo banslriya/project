@@ -1759,7 +1759,3 @@ a, .conf-overlay, .conf-info, .conf-info .c-btn, .conf-title, .conf-text, .heade
 /*transition delay*/
 .class { -o-transition-delay: 0ms; transition-delay: 0ms; -moz-transition-delay: 0ms; -webkit-transition-delay: 0ms; -ms-transition-delay: 0ms; }
 
-
-
-
-
